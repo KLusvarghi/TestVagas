@@ -86,10 +86,10 @@ export default function Question03() {
     <Container>
       <Title>Questão 3</Title>
       <SubTitle>Conforme os valores do faturamento mensal</SubTitle>
-      <Text>{`O menor valor de faturamento ocorrido em um dia do mês é de ${informacoes[0].menorVlFaturamento}`}</Text>
-      <Text>{`A quantidade de dias que tiveram o vlaor do faturamento igual a 0 são: ${informacoes[0].diasVlFaturamentoZero}`}</Text>
-      <Text>{`O maior valor de faturamento ocorrido em um dia do mês é de ${informacoes[0].maiorVlFaturamento}`}</Text>
-      <Text>{`Houveram ${informacoes[0].diasMaiorFaturamentoMensal} dias em que o valor de faturamento diário foi superior à média mensal`}</Text>
+      <Text>{`O menor valor do faturamento ocorrido em um dia do mês é de ${informacoes[0].menorVlFaturamento}.`}</Text>
+      <Text>{`Houve ${informacoes[0].diasVlFaturamentoZero} dias em que o valor do faturamento foi igual a 0.`}</Text>
+      <Text>{`O maior valor de faturamento ocorrido em um dia do mês é de ${informacoes[0].maiorVlFaturamento}.`}</Text>
+      <Text>{`Houve ${informacoes[0].diasMaiorFaturamentoMensal} dias em que o valor de faturamento diário foi superior à média mensal.`}</Text>
     </Container>
   )
 }

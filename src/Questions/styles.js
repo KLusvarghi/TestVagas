@@ -78,3 +78,25 @@ export const Button = styled.button`
   cursor: pointer;
   margin-left: 10px;
 `;
+
+export const ContainerTable = styled.section`
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Table = styled.section`
+  font-family: 'Golos Text', sans-serif;
+  border-collapse: collapse;
+  margin: 0 auto;
+  // border: 2px solid;
+
+  tr,
+  td {
+    border-bottom: 1px solid #0F131A;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+  }
+`;

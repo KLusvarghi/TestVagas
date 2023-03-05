@@ -1,4 +1,4 @@
-import {Container, Title, Text, SubTitle} from './styles'
+import {Container, Title,Table, SubTitle, ContainerTable} from './styles'
 
 export default function Question04() {
   const mediaporDistribuidora = []
@@ -49,9 +49,20 @@ export default function Question04() {
     <Container>
       <Title>Questão 4</Title>
       <SubTitle>Percentual de representação que cada estado</SubTitle>
-      {mediaporDistribuidora.map((item, index) => (
-        <Text key={index}> Distribuidora: {item.estado}, porcentagem: {item.porcentagem}%</Text>
-      ))}
+      <ContainerTable>
+        <Table>
+          <tr>
+            <td>Distribuidora</td>
+            <td>Porcentagem</td>
+          </tr>
+          {mediaporDistribuidora.map((item, index) => (
+            <tr key={index}>
+              <td>{item.estado}</td>
+              <td>{item.porcentagem}%</td>
+            </tr>  
+          ))}
+        </Table>
+      </ContainerTable>
     </Container>
   )
 }
